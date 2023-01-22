@@ -3,6 +3,12 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
+"""
+Input: l1 = [2,4,3], l2 = [5,6,4]
+Output: [7,0,8]
+Explanation: 342 + 465 = 807.
+"""
 from typing import Optional
 
 class Solution:
@@ -31,8 +37,3 @@ class Solution:
 
         return dummyHead.next
 
-"""
-Input: l1 = [2,4,3], l2 = [5,6,4]
-Output: [7,0,8]
-Explanation: 342 + 465 = 807.
-"""
