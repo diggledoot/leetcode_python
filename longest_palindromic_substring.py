@@ -1,19 +1,20 @@
-def find_longest_palindrome(s):
+def find_longest_palindrome(string):
     longest = ''
-    n = len(s)
+    length_of_string = len(string)
 
-    if n == 1:
-        return s
+    if length_of_string == 1:
+        return string
 
-    if n == 2:
-        if s == s[::-1]:
-            return s
+    if length_of_string == 2:
+        if string == string[::-1]:
+            return string
 
-    for i in range(n):
-        for j in range(i+1,n+1): #n+1 here because we want to till the end at 13
-            word = s[i:j]
+    for i in range(length_of_string):
+        # n+1 here because we want to till the end at 13
+        for j in range(i+1, length_of_string+1):
+            word = string[i:j]
             if word == word[::-1]:
-                if len(word)>len(longest):
+                if len(word) > len(longest):
                     longest = word
     return longest
 
