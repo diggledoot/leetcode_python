@@ -10,7 +10,7 @@ def find_longest_palindrome(string):
             return string
 
     for i in range(length_of_string):
-        # n+1 here because we want to till the end at 13
+        # n+1 here because we want to till the end of string
         for j in range(i+1, length_of_string+1):
             word = string[i:j]
             if word == word[::-1]:
