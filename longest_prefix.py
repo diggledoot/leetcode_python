@@ -4,7 +4,9 @@ from typing import List
 def longestCommonPrefix(strings: List[str]) -> str:
     res = ""
 
-    for i in range(len(strings[0])):
+    length_of_first_string = len(strings[0])
+
+    for i in range(length_of_first_string):
         for s in strings:
             """
             If i equals to length of s then it is considered out of bounds
@@ -16,3 +18,7 @@ def longestCommonPrefix(strings: List[str]) -> str:
         res += strings[0][i]
 
     return res
+
+
+array = ["hello", "hell", "help"]
+print(longestCommonPrefix(array))

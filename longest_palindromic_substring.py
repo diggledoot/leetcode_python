@@ -1,5 +1,5 @@
 def find_longest_palindrome(string):
-    longest = ''
+    longest = ""
     length_of_string = len(string)
 
     if length_of_string == 1:
@@ -11,7 +11,7 @@ def find_longest_palindrome(string):
 
     for i in range(length_of_string):
         # n+1 here because we want to till the end of string
-        for j in range(i+1, length_of_string+1):
+        for j in range(i + 1, length_of_string + 1):
             word = string[i:j]
             if word == word[::-1]:
                 if len(word) > len(longest):
@@ -19,7 +19,7 @@ def find_longest_palindrome(string):
     return longest
 
 
-print(find_longest_palindrome('locoannamadam'))
+print(find_longest_palindrome("locoannamadam"))
 # madam
 
 print(find_longest_palindrome("bb"))

@@ -12,13 +12,13 @@ def intToRoman(number: int) -> str:
         ["CD", 400],
         ["D", 500],
         ["CM", 900],
-        ["M", 1000]
+        ["M", 1000],
     ]
     result = ""
     for symbol, value in reversed(symbol_list):
-        if number // value:  # Check if can be integer divided is 0
-            count = number//value
-            result += (symbol*count)
+        if number // value:  # Check if the integer divided is 0
+            count = number // value
+            result += symbol * count
             number = number % value
     return result
 
