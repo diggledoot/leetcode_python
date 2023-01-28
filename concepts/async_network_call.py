@@ -12,7 +12,7 @@ async def main():
     async with aiohttp.ClientSession() as session:
 
         # wait for data
-        result = await fetch(session, 'https://pokeapi.co/api/v2/pokemon/ditto')
+        result = await fetch(session, "https://pokeapi.co/api/v2/pokemon/ditto")
 
         # deserialize the json string into a python object
         json_object = json.loads(result)

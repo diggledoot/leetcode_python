@@ -3,7 +3,7 @@ Input: s = "abcabcbb"
 Output: 3
 Explanation: The answer is "abc", with the length of 3.
 """
-#Window method
+# Window method
 class Solution:
     def lengthOfLongestSubstring(self, string: str) -> int:
         result_string = ""
@@ -16,9 +16,9 @@ class Solution:
 
         for character in string:
             # If string already contains the character
-            # Then substring after repeating character
+            # Then substring after first repeating character
             if character in result_string:
-                result_string = result_string[result_string.index(character)+1:]
+                result_string = result_string[result_string.index(character) + 1 :]
 
             result_string = result_string + character
 

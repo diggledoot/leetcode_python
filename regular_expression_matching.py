@@ -1,12 +1,12 @@
 import re
 
 
-def isMatch(s: str, p: str) -> bool:
+def isMatch(inputString: str, pattern: str) -> bool:
 
-    p = ''.join(set(p))
-    p = r"{}".format(p)
-    p = re.compile(p)
-    if p.fullmatch(s):
+    pattern = "".join(set(pattern))
+    pattern = r"{}".format(pattern)
+    pattern = re.compile(pattern)
+    if pattern.fullmatch(inputString):
         return True
     else:
         return False
