@@ -13,7 +13,7 @@
 # - The input list is not guaranteed to be ordered in any way
 # - The same product can have multiple prices at the same timestamp
 
-
+# My solution
 def lowest_price(prices):
     result = {}
 
@@ -40,7 +40,7 @@ def lowest_price(prices):
     return result
 
 
-# omg this is elegant af
+# ChatGPT's solution, elegant af
 def chatgpt_lowest_price(data):
     prices = {}
     for item in data:
