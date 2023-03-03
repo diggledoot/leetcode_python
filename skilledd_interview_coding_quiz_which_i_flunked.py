@@ -15,12 +15,14 @@
 
 
 def lowest_price(prices):
+    #Initialize dictionary - hashmap
     result = {}
 
+    #Initialize hashmap
     for product, time, price in prices:
         if product not in result:
             result[product] = []
-        result[product].append([time, price])
+        result[product].append([time, price]) # "Product A":[[1,2]]
 
     for product in result:
         temp = result[product]
