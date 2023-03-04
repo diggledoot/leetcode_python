@@ -1,11 +1,10 @@
-
 def generate_numbers_generator(max):
-    for num in range(1, max+1):
+    for num in range(1, max + 1):
         yield num
 
 
 def generate_numbers_list(max):
-    numbers = [num for num in range(1, max+1)]
+    numbers = [num for num in range(1, max + 1)]
     return numbers
 
 

@@ -14,7 +14,6 @@ class Interface2(ABC):
 
 
 class MyClass(Interface1, Interface2):
-
     def __init__(self, name: str = "Default", age: int = 0) -> None:
         self.__name = name
         self.__age = age

@@ -26,7 +26,8 @@ def test(digits):
     result = []
     for perm in permutations:
         result.append(perm)
+
     return result
 
 
-print(test("234"))
+print(test("23"))
