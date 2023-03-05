@@ -13,10 +13,12 @@ class Interface2(ABC):
         print("Interface 2 default method")
 
 
+# __ means private (just that class, subclass cannot see), _ means protected (subclass and parent class)
 class MyClass(Interface1, Interface2):
-    def __init__(self, name: str = "Default", age: int = 0) -> None:
+    def __init__(self, name: str = "Default", age: int = 0, gender: str = "T") -> None:
         self.__name = name
         self.__age = age
+        self.__gender = gender
 
     def get_age(self):
         return self.__age
@@ -34,5 +36,5 @@ class MyClass(Interface1, Interface2):
 myClass = MyClass()
 myClass.interface_method_1()
 myClass.interface_method_2()
-
 print(myClass.get_name())
+print(myClass.gender)
